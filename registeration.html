@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style4.css">
+    <link rel="stylesheet" href="css/all.min.css" />
+</head>
+
+<body>
+
+    <div class="contain" id="contain">
+        <div class="form-contain">
+            <form id="myform" action="action.html" data-aos="fade-right" onsubmit="validation()">
+                <h1>Register</h1>
+                <div class="social-contain">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social"><i class="fab fa-apple"></i></a>
+                </div> 
+                <span>or use your email for registration</span>
+                <input type="text" id="user1" placeholder="First Name" required />
+                <input type="text" id="user2" placeholder="Last Name" required />
+                <input type="text" placeholder="Adress" required />
+                <input type="email" id="email" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                    required />
+                <input type="tel" id="mobile" placeholder="Phone number"
+                    pattern="[0-9]{11}" required />
+                <input type="password" id="pass" placeholder="Password"
+                    pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[^A-Za-z0-9]).{8,50}"
+                    title="the password must include uppercase and 8 lowercase character,one number, one special character "
+                    required />
+                    <!-- <input type="text" id="pass" placeholder="Password" required /> -->
+                <div class="select">
+                    <select name="Gender" id="gendre" class="box" required>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                </div>
+                <input type="submit" value="SIGN UP" class="btn">
+            </form>
+        </div>
+        <div class="overlay-contain">
+            <div class="overlay">
+                <div class="overlay-panel overlay-right">
+                    <h1>Greetings, Friend!</h1>
+                    <p>Register & Start Using Our Services!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
